@@ -96,8 +96,45 @@ nav h3 {
 
 /* header section end  */
 
+/* main section started  */
 
+.team-work {
+    display: flex;
+    margin: 50px 140px;
+}
 
+.team-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.team-work-text-area {
+    margin-left: 70px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-content: center;
+
+}
+
+.team-work-text-area h1 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.gray-text {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.light-gray-text {
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 
 /* responsive area  */
 @media screen and (max-width:577px) {
@@ -122,5 +159,49 @@ nav h3 {
     .hdescription img {
         width: 100%;
         height: auto;
+    }
+
+    .team-work {
+        display: block;
+        /* margin: auto; */
+        margin: 20px 20px;
+    }
+
+    .team-images {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .team-work-text-area {
+        margin: 10px;
+    }
+
+    .team-work-text-area .team-work-btn {
+        /* margin-left: 200px; */
+
+    }
+}
+
+@media screen and (min-width:578px) and (max-width:992px) {
+    .hdescription img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: auto 50px;
+    }
+
+    .team-work {
+        display: block;
+        justify-content: center;
+    }
+
+    .team-work-text-area {
+        padding-left: 10px;
     }
 }
