@@ -228,7 +228,40 @@ display:  none;
 .title >p{
     color: gray;
 }
+
+/* main section end here */
+
+/* footer section started  */
+footer{
+    margin: auto 80px;
+}
+.footer-title{
+ text-align: center;
+ margin-top: 150px;
+ margin-bottom: 40px;
+}
+.footer-title>h1{
+    font-size: 2.5rem;
+}
+.sponsor-icon-parent{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright-area{
+    background-color: rgb(248, 234, 215);
+    /* width: 1000px; */
+    height: 80px ;
+    text-align: center;
+   align-content: center;
+   color: rgb(104, 104, 104);
+   font-size: 1.2rem;
+   margin-top: 100px;
+   margin-bottom: 150px;
+}
+
+
 /* responsive area  */
+
 @media screen and (max-width:577px) {
     .navbar {
 
